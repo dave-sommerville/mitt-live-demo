@@ -45,11 +45,11 @@ article {
   /* Change the color of the shape here*/
   background-color: #6cc24a;
   /*
-  Try changing the animation to one of the following:
+    Try changing the animation to one of the following:
     sliding - scaling - fadeInOut - allAtOnce
   */
   animation: sliding 5s ease-in-out infinite alternate;
-  /*                 ^ You can change the duration of the animation here */
+  /*                 ^ You can change the duration of the animation too */
 }
 form {
   /* Reveal a secret! Change the visibility to visible */
