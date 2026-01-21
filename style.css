@@ -53,11 +53,11 @@ article {
 }
 form {
   /* Reveal a secret! Change the visibility to visible */
-  visibility: visible;
+  visibility: hidden;
   position: fixed;
   /* You can move the form around too*/
   bottom: 100px;
-  left: 10px;
+  left: 100px;
 }
 
 /* Animations Design */
@@ -110,7 +110,7 @@ header {
   background-size: cover;
 
 }
-h1, h2 {
+h1, h2, h4 {
   margin: 0;
 }
 p, ul {
@@ -143,9 +143,7 @@ form {
   background-color: #74d2e8;
   border-radius: 8px;
 }
-h4 {
-  margin: 0;
-}
+
 input {
   height: 40px;
   width: 200px;
