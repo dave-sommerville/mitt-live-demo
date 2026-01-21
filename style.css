@@ -1,0 +1,192 @@
+@charset "utf-8";
+:root {
+  /* Saved Background Images */
+  --background-image-one: url("https://cdn.pixabay.com/photo/2022/01/30/23/58/universe-6982526_1280.jpg");
+  --background-image-two: url("https://cdn.pixabay.com/photo/2024/04/09/10/45/burger-8685610_1280.png");
+  --background-image-three: url("https://cdn.pixabay.com/photo/2017/03/25/18/06/color-2174066_1280.png");
+  --background-image-four: url("https://cdn.pixabay.com/photo/2018/03/19/22/05/panorama-3241426_1280.jpg");
+  --background-image-five: url("https://cdn.pixabay.com/photo/2016/07/30/19/56/banner-1557881_1280.jpg");
+
+}
+
+body {
+  /* Try a different page fonts */
+  font-family: Calibri;
+  /* Try changing the font or background color */
+  color: #ffffff;
+  background-color: #0e4174;
+}
+/*Try making the fonts different sizes for different elements*/
+h1 { font-size: 100px; }
+h2 { font-size: 32px; }
+p, li { font-size: 20px; }
+
+/* Try image-two or image-three to see how the background changes */
+header { 
+  background: var(--background-image-one) no-repeat center;
+}
+
+article {
+  height: fit-content;
+  width: 100%;
+  /* Flex is one of the ways you can control your layout using CSS*/
+  /* Try removing flex and see what happens.  */
+  display: flex;
+}
+
+.animated-div {
+  /* Change the size of the shape here*/
+  width: 200px;
+  height: 200px;
+  /* Change the curves of the shape here*/
+  /* Changing it to 50% gives you a circle (or an oval)*/
+  border-radius: 50%;
+
+  /* Change the color of the shape here*/
+  background-color: #6cc24a;
+  /*
+  Try changing the animation to one of the following:
+    sliding - scaling - fadeInOut - allAtOnce
+  */
+  animation: sliding 5s ease-in-out infinite alternate;
+  /*                 ^ You can change the duration of the animation here */
+}
+form {
+  /* Reveal a secret! Change the visibility to visible */
+  visibility: visible;
+  position: fixed;
+  /* You can move the form around too*/
+  bottom: 100px;
+  left: 10px;
+}
+
+/* Animations Design */
+@keyframes sliding {
+  from {
+    transform: translateX(-30svw);
+  }
+  to {
+    transform: translateX(30svw);
+  }
+}
+@keyframes scaling {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.3);
+  }
+}
+
+@keyframes fadeInOut {
+  from {
+    filter: opacity(1);
+  }
+  to {
+    filter: opacity(0.01);
+  }
+}
+
+@keyframes allAtOnce {
+  from {
+    transform: translateX(-30svw) scale(1);
+    filter: opacity(1);
+  }
+  to {
+    transform: translateX(30svw) scale(0.3);
+    filter: opacity(0.01);
+  }
+}
+
+/* Other Properties */
+body {position: relative;}
+header {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+}
+h1, h2 {
+  margin: 0;
+}
+p, ul {
+  width: 300px;
+  height: 200px;
+}
+article {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  font-size: 20px;
+  color: #012;
+  background-color: #74d2e8;
+  border-radius: 8px;
+}
+h4 {
+  margin: 0;
+}
+input {
+  height: 40px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 8px;
+
+}
+button {
+  height: 30px;
+  width: 90px;
+}
+/*
+MITT's color palette:
+- Dark Blue: #0e4174
+- Light Blue: #74d2e8
+- Green: #6cc24a
+- White: #ffffff
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

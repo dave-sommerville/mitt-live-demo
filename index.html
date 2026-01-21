@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Demo</title>
+    <link rel="stylesheet" href="./style.css" media="all">
+  </head>
+  <body>
+    <header>
+      <h1 id="header">MITT Live Demo Site</h1>
+      <h2>Learning through play</h2>
+    </header>
+    <main>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora eius porro quibusdam aut, commodi obcaecati dolorum necessitatibus velit, ipsa eos! Aut accusamus, possimus eos dolore corrupti in dolores id!
+        </p>
+        <ul>
+          <li>Lorem One</li>
+          <li>Lorem Two</li>
+          <li>Lorem Three</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veritatis recusandae molestiae. Pariatur, sed expedita. Rem facere, vel vitae itaque a cupiditate quisquam, hic iure laborum qui atque doloremque aut.
+        </p>
+      </article>
+      <section class="animation">
+        <div class="animated-div"></div>
+      </section>
+    </main>
+    <footer>
+      <form 
+            onsubmit="document.getElementById('header').textContent = document.getElementById('userInput').value; document.getElementById('userInput').value = ''; return false;">
+        <h4>Thanks to JavaScript in the HTML, you can update the title using this input</h4>
+        <input type="text" id="userInput">
+        <button type="submit">Update Title</button>
+      </form>
+    </footer>
+  </body>
+</html>
