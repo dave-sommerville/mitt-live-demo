@@ -6,7 +6,6 @@
   --background-image-three: url("https://cdn.pixabay.com/photo/2017/03/25/18/06/color-2174066_1280.png");
   --background-image-four: url("https://cdn.pixabay.com/photo/2018/03/19/22/05/panorama-3241426_1280.jpg");
   --background-image-five: url("https://cdn.pixabay.com/photo/2016/07/30/19/56/banner-1557881_1280.jpg");
-
 }
 
 body {
@@ -34,6 +33,11 @@ article {
   display: flex;
 }
 
+/* Hover effects are called a psuedoelement, and you can create those in CSS as well*/
+li:hover {
+  background-color: #00225566;
+  transform: scale(1.02);
+}
 .animated-div {
   /* Change the size of the shape here*/
   width: 200px;
@@ -49,6 +53,9 @@ article {
   animation: sliding 5s ease-in-out infinite alternate;
   /*                 ^ You can change the duration of the animation*/
 }
+/* Change the size of the bottom image*/
+img { height: 200px; }
+
 form {
   /* Reveal a secret! Change the visibility to visible */
   visibility: hidden;
@@ -113,6 +120,13 @@ p, ul {
   width: 300px;
   height: 200px;
 }
+a {
+  color: #fff;
+}
+li {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 article {
   flex-direction: row;
   justify-content: space-between;
@@ -151,6 +165,12 @@ button {
   height: 30px;
   width: 90px;
 }
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /*
 MITT's color palette:
 - Dark Blue: #0e4174
